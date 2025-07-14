@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript Fun Zone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">JS Interactive Task</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Quiz</a></li>
+      <li><a href="#">Jokes</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Main Container -->
+  <main class="container">
+    <h1>🎉 Welcome to the JavaScript Fun Zone</h1>
+    <p>Explore quizzes and fetch jokes dynamically using JavaScript and APIs!</p>
+
+    <!-- Joke Section -->
+    <section class="joke-section">
+      <h2>😂 Random Joke Generator</h2>
+      <p id="joke">Click the button to get a joke!</p>
+      <button onclick="getJoke()">Get Joke</button>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+      <h2>🧠 Mini JavaScript Quiz</h2>
+
+      <div class="quiz-question">
+        <p>1. What does API stand for?</p>
+        <select id="q1">
+          <option value="">--Choose an answer--</option>
+          <option value="wrong">Application Phone Interface</option>
+          <option value="correct">Application Programming Interface</option>
+          <option value="wrong">Automated Program Input</option>
+        </select>
+      </div>
+
+      <div class="quiz-question">
+        <p>2. What method is used to fetch data in JavaScript?</p>
+        <select id="q2">
+          <option value="">--Choose an answer--</option>
+          <option value="correct">fetch()</option>
+          <option value="wrong">connect()</option>
+          <option value="wrong">request()</option>
+        </select>
+      </div>
+
+      <button onclick="checkQuiz()">Submit Quiz</button>
+      <p id="quizResult"></p>
+    </section>
+  </main>
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

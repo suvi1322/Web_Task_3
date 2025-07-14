@@ -1,0 +1,100 @@
+/* 🔹 Navigation Bar Styles */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0d47a1;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #bbdefb;
+}
+
+/* 🔹 Main Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3f2fd;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin: 0;
+}
+
+/* 🔹 Main Container */
+.container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-top: 120px; /* 👈 To prevent content being hidden by fixed nav */
+  width: 80%;
+  max-width: 800px;
+}
+
+/* 🔹 Buttons */
+button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+/* 🔹 Quiz & Joke Sections */
+.quiz-section, .joke-section {
+  background-color: #f9fbe7;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #cfd8dc;
+}
+
+/* 🔹 Quiz Form */
+.quiz-question {
+  margin-bottom: 1rem;
+}
+
+select {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #90a4ae;
+}
+
+
